@@ -50,7 +50,7 @@
                                 <rect key="frame" x="202.5" y="167" width="110" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoH-02-Ggs">
                                 <rect key="frame" x="63" y="211" width="249.5" height="44"/>
@@ -66,7 +66,7 @@
                                     <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L4E-iT-fk2"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQw-HS-KNr">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQw-HS-KNr">
                                 <rect key="frame" x="0.0" y="275" width="375" height="392"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seu índice de Massa Corporal é" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayi-r4-q8i">
@@ -102,7 +102,7 @@
                                 <rect key="frame" x="63" y="167" width="110" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.11372549019607843" green="0.70588235294117641" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -134,10 +134,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="lbResult" destination="lRs-vQ-fea" id="Q1z-SL-dLq"/>
-                        <outlet property="lvResult" destination="DdO-Hp-aWw" id="fls-AW-JPW"/>
-                        <outlet property="tfHeight" destination="Sei-Jn-R2j" id="imN-lf-mf1"/>
-                        <outlet property="tfWeight" destination="Lgn-De-lch" id="P9P-RX-KAh"/>
+                        <outlet property="ivResult" destination="DdO-Hp-aWw" id="pBq-38-cuw"/>
+                        <outlet property="lbResult" destination="lRs-vQ-fea" id="1Ez-2g-zvP"/>
+                        <outlet property="tfHeight" destination="Sei-Jn-R2j" id="XMS-Dt-aHZ"/>
+                        <outlet property="tfWeight" destination="Lgn-De-lch" id="vRd-wj-LxI"/>
+                        <outlet property="viResult" destination="SQw-HS-KNr" id="GGr-w5-ppb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
